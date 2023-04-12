@@ -11,8 +11,9 @@ def start_generator():
 
     
     time.sleep(1.5)
-
-    path = r"C:\Users\Fiscal4\Desktop\auto buscar danfe\XMLs com erro"
+    
+# sempre que colocar o caminho da pasta utilizar a contra barra duas vezes //
+    path = r"COLOQUE AQUI O CAMINHO DA PASTA ONDE ESTAO OS XMLS"
 
     for filename in os.listdir(path):
         if filename.endswith(".xml"):
@@ -98,11 +99,11 @@ root = tk.Tk()
 root.title('Gerador de DANFE')       
 
 # Adiciona o botão 'Iniciar  gerador de DANFE'
-start_button = tk.Button(root, text='Iniciar  gerador de DANFE', command=start_generator)
+start_button = tk.Button(root, text='INICIAR GERADOR DANFE', command=start_generator)
 start_button.pack()
 
 # Adiciona o botão 'Parar gerador de DANFE'
-stop_button = tk.Button(root, text='Parar gerador de DANFE', command=stop_generator)
+stop_button = tk.Button(root, text='PARAR GERADOR DE DANFE', command=stop_generator)
 stop_button.pack()
 
 #inicia a janela do progrma 
